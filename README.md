@@ -2,6 +2,7 @@
 
 ## Introducción
 
+- Control de versiones 
 - Instalación
 - Gestión de un repositorio
 - GUI’s
