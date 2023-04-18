@@ -1,0 +1,31 @@
+1. Crea una carpeta en un nuevo directorio en la linea de comandos.
+- ¿Que pasa si ahora haces git status?
+2. Inicializa el repo
+3. Añade un primer archivo
+- ¿Que pasa si ahora haces git status?
+4. Añade este primer archivo
+- ¿Que pasa si ahora haces git status?
+5. Haz tu primera confirmación
+- ¿Que pasa si ahora haces git status?
+6. Añade dos archivos vacios
+- ¿Que pasa si ahora haces git status?
+7. Pon uno en seguimiento y el otro no
+- ¿Que pasa si ahora haces git status?
+8. Confirma
+- ¿Que pasa si ahora haces git status?
+9. Pon en seguimiento el otro archivo
+- ¿Que pasa si ahora haces git status?
+10. Haz una segunda confirmación
+- Muestra el historial del repositorio. ¿Que ves?
+11. Modifica uno de los archivos
+- ¿Que pasa si ahora haces git status?
+12. Pon el seguimiento sobre el primer archivo 
+- ¿Que pasa si ahora haces git status?
+13. Modifica los otros dos archivos
+- ¿Que pasa si ahora haces git status?
+14. Almacena solo la instantanea del archivo 2
+- ¿Que pasa si ahora haces git status?
+15. Haz una confirmacion
+- ¿Que pasa si ahora haces git status?
+16. Pon en seguimiento el tercer archivo y haz confirmacion 
+- ¿Que pasa si ahora haces git status?
