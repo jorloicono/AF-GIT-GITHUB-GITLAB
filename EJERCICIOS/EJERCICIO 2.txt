@@ -1,0 +1,13 @@
+1. Inicia un proyecto, crea dos archivos y haz dos commits, uno cada vez que agregues el archivo (con su respectivo git add)
+- ¿Que ramas tienes ahora?
+2. Crea una rama llamada pruebas y muevete a ella
+3. Modifica el primer archivo y haz un commit
+4. Vuelve a la rama master, mira el archivo que has modificado antes
+- ¿Como está? Echa un vistazo también al historial
+5. Vuelve a la otra rama y revisa el archivo
+-¿Como está?
+6. Añade otra linea al archivo desde una nueva rama generada a partir de la master que se llame experimento. Haz un commit y vuelve a pruebas.
+- ¿Que ves en el archivo?
+7. Renombrear una rama con el comando git branch -m [nombre_actual] [nombre_nuevo]. Llamar a experimento pruebas2.
+
+NO BORRES ESTO, LO UTILIZARAS EN EL EJERCICIO 3

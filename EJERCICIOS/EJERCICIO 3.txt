@@ -1,0 +1,19 @@
+1. Ves a la rama master y haz merge de la rama pruebas2.
+2. Dentro de la rama master observa el contenido del archivo
+- ¿Que ves?
+3. Haz un cambio en la rama master en el archivo1 y otro en la pruebas2 en el archivo2. Haz commit de ambos, en cada uno de sus ramas.
+4. Ves a la rama master y haz merge con la rama pruebas2. Observa el archivo2.
+- ¿Que ves
+5. Mira el contenido del archivo 1 en la rama master y en la rama pruebas
+- ¿Son diferentes?
+6. Lleva los cambios de pruebas a master con un merge.
+¿Que pasa?
+7. Haz git status y mira el contenido del archivo.
+- ¿Que ves?
+8. ¿Como resolverias este problema?
+9. Haz git merge --abort. 
+- ¿Que ha pasado?
+10. Vuelve a ejecutar la fusión con git checkout master git merge pruebas
+11. Corrige el error manualmente con un editor como vim
+12. Ejecuta git add archivo1.txt y haz commit
+- ¿Te deja ahora hacer el merge?
