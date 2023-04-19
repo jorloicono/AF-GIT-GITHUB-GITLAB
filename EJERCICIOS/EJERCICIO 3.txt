@@ -13,7 +13,7 @@
 8. ¿Como resolverias este problema?
 9. Haz git merge --abort. 
 - ¿Que ha pasado?
-10. Vuelve a ejecutar la fusión con git checkout master git merge pruebas
+10. Vuelve a ejecutar la fusión con git checkout master ; git merge pruebas
 11. Corrige el error manualmente con un editor como vim
 12. Ejecuta git add archivo1.txt y haz commit
 - ¿Te deja ahora hacer el merge?
