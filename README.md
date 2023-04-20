@@ -1,4 +1,4 @@
-# AF-GIT-GITHUB-GITHUB-ACTIONS
+# AF-GIT-GITHUB-GITHUB
 
 ## Introducción
 
@@ -14,41 +14,32 @@
 - Fusión de Ramas
 - Resolviendo Problemas
 - Tipos de Ramas
-- Tags
 
 ## Colaboración en Github
 
 - Ramas remotas
-- Publicando
+- Publicando (Push)
 - Tags
 - Pull Request
-- Liberaciones
 
-## Buenas prácticas
+## Reorganización
 
-- Reorganización
-- Regla de Oro
--	Forzar subida
+- Introducción a la reorganización
+- Regla de Oro de la reorganización
+- Forzar subida
 
-## GitFlow
+## Git Flow
 
-- Introducción
+- Introducción a TBD y Git Flow
 - Features
--	Releases
--	Hotfix
--	Git hooks
+- Release
+- Hotfix
+- Git hooks
 
-## Github Actions
+## Proyecto final GIT y Github
 
-- Introducción
--	Workflow. Partes y sintaxis
--	Configuración y ejecución de un workflow
--	Construcción agente github actions
--	Gestión variables y secretos
-
-## Proyecto final Github
-
--	Crear un action simple propia en Shell script o  python
--	Configuración y ejecución de un workflow
--	Crear un workflow propio que use dicha action
--	Crear un helloworld java o similar que ejecute en un repo dicha action
+- Creación y actualización de repositorios
+- Historial de cambios
+- Deshacer cambios
+- Ramas
+- Repositorios remotos
