@@ -1,4 +1,4 @@
-# AF-GIT-GITHUB-GITHUB
+# AF-GIT-GITHUB
 
 ## Introducción
 
