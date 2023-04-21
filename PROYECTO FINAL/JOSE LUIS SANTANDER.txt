@@ -1,0 +1,178 @@
+Creación y actualización de repositorios
+Ejercicio 2
+C:\Users\GSformacion3\Desktop>mkdir libro
+
+C:\Users\GSformacion3\Desktop>cd libro
+
+C:\Users\GSformacion3\Desktop\libro>git init
+Initialized empty Git repository in C:/Users/GSformacion3/Desktop/libro/.git/
+
+C:\Users\GSformacion3\Desktop\libro>dir
+ El volumen de la unidad C es Windows
+ El número de serie del volumen es: B6F2-A8DA
+
+ Directorio de C:\Users\GSformacion3\Desktop\libro
+
+20/04/2023  16:27    <DIR>          .
+20/04/2023  16:27    <DIR>          ..
+               0 archivos              0 bytes
+               2 dirs  420.301.639.680 bytes libres
+Ejercicio 3
+C:\Users\GSformacion3\Desktop\libro>git add .
+
+C:\Users\GSformacion3\Desktop\libro>git commit -m "indice creado"
+[master (root-commit) 24b9f4b] indice creado
+ 1 file changed, 4 insertions(+)
+ create mode 100644 indice.txt
+Ejercicio 4
+git commit -m "Añadido índice del libro"
+On branch master
+nothing to commit, working tree clean
+Ejercicio 5
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   indice.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+C:\Users\GSformacion3\Desktop\libro>git diff indice.txt
+diff --git a/indice.txt b/indice.txt
+index 3c4c2a7..9a499c5 100644
+--- a/indice.txt
++++ b/indice.txt
+@@ -1,4 +1,3 @@
+ Capítulo 1: Introducción a Git
+ Capítulo 2: Flujo de trabajo básico
+ Capítulo 3: Gestión de ramas
+-Capítulo 4: Repositorios remotos
+\ No newline at end of file
+commit bc6938930fd66efca49bae2c11e2053378425a94 (HEAD -> master)
+Author: joseluissantander <joselu.martinezbrezmes@gruposantander.com>
+Date:   Thu Apr 20 16:35:46 2023 +0200
+
+    Añadido capitulo 3 sobre version gestion de ramas
+
+commit 24b9f4b212ffecfa0529e2a91965dd4032a96102
+Author: joseluissantander <joselu.martinezbrezmes@gruposantander.com>
+Date:   Thu Apr 20 16:29:49 2023 +0200
+
+    indice creado
+index 3c4c2a7..9a499c5 100644
+--- a/indice.txt
++++ b/indice.txt
+@@ -1,4 +1,3 @@
+ Capítulo 1: Introducción a Git
+ Capítulo 2: Flujo de trabajo básico
+ Capítulo 3: Gestión de ramas
+-Capítulo 4: Repositorios remotos
+\ No newline at end of file
+C:\Users\GSformacion3\Desktop\libro>git log
+commit ce5435751be199f48be106f4d51829e00f57fc15 (HEAD -> master)
+Author: joseluissantander <joselu.martinezbrezmes@gruposantander.com>
+Date:   Thu Apr 20 16:35:46 2023 +0200
+
+    Añadido :capitulo 3 sobre version gestion de ramas al limite
+
+commit 24b9f4b212ffecfa0529e2a91965dd4032a96102
+Author: joseluissantander <joselu.martinezbrezmes@gruposantander.com>
+Date:   Thu Apr 20 16:29:49 2023 +0200
+
+    indice creado
+git log
+
+git diff HEAD~2..HEAD
+
+git diff 24b9f4b212ffecfa0529e2a91965dd4032a96102..HEAD
+
+Deshacer cambios
+
+Ejercicio 1
+C:\Users\GSformacion3\Desktop\libro\capitulos>cd..
+
+C:\Users\GSformacion3\Desktop\libro>indice.txt
+
+C:\Users\GSformacion3\Desktop\libro>git status
+
+C:\Users\GSformacion3\Desktop\libro>git restore indice.txt
+C:\Users\GSformacion3\Desktop\libro>git status
+Ejercicio 2
+C:\Users\GSformacion3\Desktop\libro>git add indice.txt C:\Users\GSformacion3\Desktop\libro>git status
+C:\Users\GSformacion3\Desktop\libro>git reset indice.txt
+C:\Users\GSformacion3\Desktop\libro>git status
+ C:\Users\GSformacion3\Desktop\libro>git restore indice.txt
+C:\Users\GSformacion3\Desktop\libro>git status
+
+Ejercicio 3
+C:\Users\GSformacion3\Desktop\libro\capitulos>git add .
+C:\Users\GSformacion3\Desktop\libro\capitulos>git status
+C:\Users\GSformacion3\Desktop\libro\capitulos>git reset
+C:\Users\GSformacion3\Desktop\libro\capitulos>git status
+C:\Users\GSformacion3\Desktop\libro\capitulos>git checkout –
+C:\Users\GSformacion3\Desktop\libro\capitulos>git status
+C:\Users\GSformacion3\Desktop\libro\capitulos>git clean -f 
+C:\Users\GSformacion3\Desktop\libro\capitulos>git status
+
+Ejercicio 4
+C:\Users\GSformacion3\Desktop\libro\capitulos>git add .
+C:\Users\GSformacion3\Desktop\libro\capitulos>git commit -m “Borrado accidental”
+C:\Users\GSformacion3\Desktop\libro\capitulos>git log
+C:\Users\GSformacion3\Desktop\libro\capitulos>git reset --soft HEAD~1
+C:\Users\GSformacion3\Desktop\libro\capitulos>git log
+C:\Users\GSformacion3\Desktop\libro\capitulos>git status
+C:\Users\GSformacion3\Desktop\libro\capitulos>git commit -m “Borrado accidental”
+C:\Users\GSformacion3\Desktop\libro\capitulos>git reset --hard HEAD~1
+C:\Users\GSformacion3\Desktop\libro\capitulos>git log
+C:\Users\GSformacion3\Desktop\libro\capitulos>git status
+
+
+Gestion de ramas
+
+C:\Users\GSformacion3\Desktop\libro>git checkout -b bibliografía
+C:\Users\GSformacion3\Desktop\libro>git branch
+* bibliografia
+  Master
+Ejercicio 2
+C:\Users\GSformacion3\Desktop\libro>git add .
+C:\Users\GSformacion3\Desktop\libro>git commit -m "capitulo 4 añadido"
+C:\Users\GSformacion3\Desktop\libro>git log --oneline –graph
+Ejercicio 3
+C:\Users\GSformacion3\Desktop\libro>echo Chacon, S. and Straub, B. Pro Git. Apress.> bibliografia.txt
+C:\Users\GSformacion3\Desktop\libro>git add .
+C:\Users\GSformacion3\Desktop\libro>git commit -m "añadida primnera referencia bibliografica"
+C:\Users\GSformacion3\Desktop\libro>git log --oneline –graph
+Ejercicio 4
+C:\Users\GSformacion3\Desktop\libro>git checkout master
+C:\Users\GSformacion3\Desktop\libro>git merge bibliografia
+C:\Users\GSformacion3\Desktop\libro>git branch -d bibliografia
+C:\Users\GSformacion3\Desktop\libro>git log --oneline --graph
+Ejercicio 5
+C:\Users\GSformacion3\Desktop\libro>git checkout -b bibliografia
+C:\Users\GSformacion3\Desktop\libro>git add .
+C:\Users\GSformacion3\Desktop\libro>git commit -m "añadida nueva referencia bibliografica"
+C:\Users\GSformacion3\Desktop\libro>git checkout master
+C:\Users\GSformacion3\Desktop\libro>git add .
+C:\Users\GSformacion3\Desktop\libro>git commit -m "añadida nueva zona temporal"
+C:\Users\GSformacion3\Desktop\libro>git merge bibliografía
+C:\Users\GSformacion3\Desktop\libro>git add .
+C:\Users\GSformacion3\Desktop\libro>git commit -m "resuelto conflicto de bibliografía”
+C:\Users\GSformacion3\Desktop\libro>git log --oneline --graph –all
+
+
+Remotos
+Ejercicio 1
+C:\Users\GSformacion3\Desktop\libro>git remote add origin
+https://github.com/joseluissantander/libro-git.git
+ejercicio 2 
+C:\Users\GSformacion3\Desktop\libro>git push --set-upstream origin master
+Ejercicio 3
+C:\Users\GSformacion3\Desktop\libro-ivan>git remote add origin https://github.com/ivanpena10/libro-git.git
+C:\Users\GSformacion3\Desktop\libro-ivan>echo ivanpena10 ivansantander@gmail.com >autores.txt
+C:\Users\GSformacion3\Desktop\libro-ivan>git add .
+C:\Users\GSformacion3\Desktop\libro-ivan>git commit -m " AÑADIDO AUTOR"
+C:\Users\GSformacion3\Desktop\libro-ivan>git push --set-upstream origin master
+Ejercicio 4
+C:\Users\GSformacion3\Desktop\libro>git clone https://github.com/joseluissantander/libro-git.git
+C:\Users\GSformacion3\Desktop\libro>git add .
+C:\Users\GSformacion3\Desktop\libro>git commit -m" Añadido nuevo autor "
+C:\Users\GSformacion3\Desktop\libro>git push --set-upstream origin autoria

@@ -1,0 +1,11 @@
+1. Crea un gitflow
+2. Crea una rama feature, agrega en ella un archivo
+3. Cierrala, revisa la rama master
+- ¿Que ves?
+4. Revisa la rama develop
+- ¿Que ves?
+5. Crea una rama release, agrega en ella un archivo
+6. Cierrala, revisa la rama master
+- ¿Que ves?
+7. Revisa la rama develop
+- ¿Que ves?
