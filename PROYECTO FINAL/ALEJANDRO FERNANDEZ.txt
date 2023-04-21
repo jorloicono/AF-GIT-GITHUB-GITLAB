@@ -1,0 +1,151 @@
+----------
+
+Creación y actualización de repositorios
+
+Ejercicio 2:
+	mkdir libro
+	cd libro
+	git init
+	ls
+
+Ejercicio 3:
+	git status
+	git status
+	git add indice.txt
+	git status
+
+Ejercicio 4:
+	git commit -m "Añadido índice del libro."
+
+Ejercicio 5:
+	git diff indice.txt
+	git add indice.txt
+	git commit -m "Añadido capítulo 3 sobre gestión de ramas"
+
+Ejercicio 6:
+	git show
+	git commit --amend
+	git show
+
+----------
+
+Manejo del historial de cambios
+
+Ejercicio 1:
+	mkdir capitulos
+	cd capitulos
+	git add .
+	git commit -m "Añadido capítulo 1."
+	git show
+
+Ejercicio 2:
+	git add .
+	git commit -m "Añadido capítulo 2."
+	git diff HEAD~2..HEAD
+
+Ejercicio 3:
+	git add .
+	git commit -m "Añadido capítulo 3."
+	git diff 4c1230c15504ae55550605a08eee47655974b935..HEAD
+
+Ejercicio 4:
+	git add .
+	git commit -m "Añadido capítulo 5 al índice."
+	git annotate indice.txt
+
+----------
+
+Deshacer cambios
+
+Ejercicio 1:
+	git status
+	git restore indice.txt
+	git status
+
+Ejercicio 2:
+	git add .
+	git restore --staged indice.txt
+	git status
+	git restore indice.txt
+	git status
+
+Ejercicio 3:
+	git add .
+	git status
+	git restore --staged capitulos/capitulo3.txt
+	git restore --staged capitulos/capitulo4.txt
+	git restore --staged indice.txt
+	git status
+	git revert bcf04991fbcc2ae2dbcb84fd4bdc4bf3ab2fb412
+	git clean -f
+	
+Ejercicio 4:
+	git add .
+	git commit -m "Borrado accidental"
+	git log
+	git revert bcf04991fbcc2ae2dbcb84fd4bdc4bf3ab2fb412
+	git log
+	git status
+	git commit -m "Borrado accidental"
+	git revert 14d5d9ae236b61ae83f0ff3ff954a05fd8e4a812
+	git status
+
+----------
+
+Gestión de ramas
+
+Ejercicio 1:
+	git branch bibliografia
+	git branch
+
+Ejercicio 2:
+	git add .
+	git commit -m "Añadido capítulo 4"
+	git log --all
+
+Ejercicio 3:
+	git checkout bibliografia
+	git add .
+	git commit -m "Añadida primera referencia bibliográfica"
+	git log --all
+
+Ejercicio 4:
+	git checkout master
+	git merge bibliografia
+	git branch -d bibliografia
+	git log --all
+
+Ejercicio 5:
+	git checkout -b bibliografia
+	git add .
+	git commit -m "Añadida nueva referencia bibliográfica"
+	git checkout master
+	git add .
+	git commit -m "Añadida nueva referencia bibliográfica"
+	git merge bibliografia
+	git add .
+	git commit -m "Resuelto conflicto de bibliografía"
+	git logg --all
+
+----------
+
+Repositorios remotos
+
+Ejercicio 1:
+	git remote add origin https://github.com/afernanfer/libro-git.git
+	git remote -v
+
+Ejercicio 2:
+	git push --set-upstream origin master
+
+Ejercicio 3:
+	git clone (user)/libro-git
+	git add .
+	git commit -m "Añadido autor"
+	git push
+
+Ejercicio 4:
+	git clone https://github.com/afernanfer/libro-git-1.git
+	cd libro-git-1
+	git checkout -b autoria
+	
