@@ -1,6 +1,6 @@
 # AF-GIT-GITHUB
 
-## Introducción
+## INTRODUCCIÓN
 
 - Control de versiones 
 - Instalación
