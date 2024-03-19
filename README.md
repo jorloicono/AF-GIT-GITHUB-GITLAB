@@ -43,3 +43,6 @@
 - Deshacer cambios
 - Ramas
 - Repositorios remotos
+
+
+One command
