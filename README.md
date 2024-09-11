@@ -3,10 +3,10 @@
 ## Introducción
 
 - Control de versiones 
-- Instalación
 - Gestión de un repositorio
 - GUI’s
 - Github
+- Gitlab
 
 ## Ramas
 
@@ -36,10 +36,22 @@
 - Hotfix
 - Git hooks
 
-## Proyecto final GIT y Github
+## Gitlab
 
-- Creación y actualización de repositorios
-- Historial de cambios
-- Deshacer cambios
+- Introducción
+- Versiones
+- Funcionalidades
+- Arquitectura
+- Usuarios
+- Repositorios
 - Ramas
-- Repositorios remotos
+- Merge Request
+- Pipelines
+  
+## Github Actions
+	
+- Introducción
+- Workflow. Partes y sintaxis
+- Configuración y ejecución de un workflow
+- Construir la imagen con Docker
+- Secretos
