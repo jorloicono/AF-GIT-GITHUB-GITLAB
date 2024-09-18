@@ -29,3 +29,4 @@
 - ¿Que pasa si ahora haces git status?
 16. Pon en seguimiento el tercer archivo y haz confirmacion 
 - ¿Que pasa si ahora haces git status?
+-último paso
