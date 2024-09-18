@@ -1,3 +1,4 @@
+Pasos a seguir:
 1. Inicia un proyecto, crea dos archivos y haz dos commits, uno cada vez que agregues el archivo (con su respectivo git add)
 - ¿Que ramas tienes ahora?
 2. Crea una rama llamada pruebas y muevete a ella
