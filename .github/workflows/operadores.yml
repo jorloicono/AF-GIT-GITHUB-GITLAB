@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Comparar valores
         run: |
-          if [[ "${{ github.ref }}" == "refs/heads/main"  && "${{ github.actor }}" == "jorloicono"]]; then
+          if [[ "${{ github.ref }}" == "refs/heads/main"  && "${{ github.actor }}" == "jorloicono" ]]; then
             echo "Bienvenido a la main Jorge"
           fi
   
