@@ -1,0 +1,17 @@
+name: Ejemplo contextos
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  ejemplo1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mostrar info
+        run: |
+          echo "Repositorio: ${{ github.repository }}"
+          echo "Commit: ${{ github.sha }}"
+          echo "Autor: ${{ github.actor }}"
+    
