@@ -13,6 +13,5 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: miartefacto
-
       - name: Usarlo
-          run: cat output.txt
+        run: cat output.txt
