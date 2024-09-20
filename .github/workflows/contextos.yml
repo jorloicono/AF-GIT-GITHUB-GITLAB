@@ -50,5 +50,10 @@ jobs:
       - name: Usa input
         run: echo "El input es:${{ github.event.inputs.miinput }}"
   
-      
+  ejemplo5:
+    runs-on: ubuntu-latest
+    steps:
+      - name: mostrar info
+        run: |
+          echo "Datos en JSON: ${{ toJSON(github) }}"
     
