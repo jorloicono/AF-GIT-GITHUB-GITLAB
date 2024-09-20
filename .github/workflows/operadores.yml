@@ -1,0 +1,18 @@
+name: Ejemplo operadores
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+
+jobs:
+  example:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comparar valores
+        run: |
+          if [[ "${{ github.ref }}" == "refs/heads/main" ]]; then
+            echo "Estamos en la main"
+          fi
+  
