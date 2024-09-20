@@ -1,4 +1,4 @@
-name: Demo de Variables
+name: Demo de Secretos
 
 on:
   push:
@@ -8,28 +8,23 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:                # Definir variables de entorno a nivel de job
-      MY_ENV_VAR: "Hola, mundo!"
-
-    steps:
-      - name: Check out el código
-        uses: actions/checkout@v3
-        
-      - name: Crear un archivo de texto
-        run: echo "Este es un archivo generado" > output.txt
-
-      - name: Guardar output
-        id: save_output
-        run: echo "output_file=$(cat output.txt)" >> $GITHUB_ENV  # Guardar en el entorno
-
-  deploy:
-    runs-on: ubuntu-latest
-    needs: build           # Este job depende del job "build"
     steps:
       - name: Check out el código
         uses: actions/checkout@v3
 
-      - name: Leer el output del job anterior
-        run: echo "El archivo generado en el job anterior es: ${{ env.output_file }}"
+      - name: Usar un secreto
+        env:
+          MY_SECRET: ${{ secrets.MY_SECRET }}  # Acceso al secreto
+        run: echo "El secreto es: $MY_SECRET"
+
+      - name: Crear un archivo con el secreto
+        run: echo "El secreto es: ${{ secrets.MY_SECRET }}" > secret.txt
+
+      - name: Guardar el archivo de secreto como artefacto
+        uses: actions/upload-artifact@v3
+        with:
+          name: secret-file
+          path: secret.txt
+
 
     
