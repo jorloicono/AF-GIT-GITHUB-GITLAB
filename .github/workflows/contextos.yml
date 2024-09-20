@@ -5,6 +5,12 @@ on:
     branches:
       - main
 
+  workflow_dispatch:
+    inputs:
+      miinput:
+        description: "Entrada"
+        required: True
+
 jobs:
   ejemplo1:
     runs-on: ubuntu-latest
@@ -14,4 +20,35 @@ jobs:
           echo "Repositorio: ${{ github.repository }}"
           echo "Commit: ${{ github.sha }}"
           echo "Autor: ${{ github.actor }}"
+
+  ejemplo2build:
+    runs-on: ubuntu-latest
+    outputs:
+      message: "Construccion completada"
+    steps:
+      - name: Construir
+        run: echo "Construido"
+
+  ejemplo2deploy:
+    runs-on: ubuntu-latest
+    needs: ejemplo2build
+    steps:
+      - name: Usando salida
+        run: echo "Mensaje:${{ needs.ejemplo2build.outputs.message }}"
+
+  ejemplo3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: info runner
+        run: |
+          echo "Nombre: ${{ runner.name }}"
+          echo "Version: ${{ runner.version }}"
+
+  ejemplo4:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Usa input
+        run: echo "El input es:${{ github.event.inputs.miinput }}"
+  
+      
     
