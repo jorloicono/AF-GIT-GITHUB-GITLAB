@@ -1,0 +1,18 @@
+name: Descargar artefactos
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descarga artefacto
+        uses: actions/download-artifact@v3
+        with:
+          name: miartefacto
+
+      - name: Usarlo
+          run: cat output.txt
