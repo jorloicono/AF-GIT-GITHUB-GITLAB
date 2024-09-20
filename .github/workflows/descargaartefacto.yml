@@ -1,19 +1,22 @@
-name: Descargar artefactos
+name: Descargar Artefacto
 
 on:
-  push:
-    branches:
-      - main
+  workflow_run:
+    workflows: ["Subir Artefacto"]
+    types:
+      - completed
 
 jobs:
-  build:
+  download:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Check out el código
         uses: actions/checkout@v3
-      - name: Descarga artefacto
+
+      - name: Descargar artefacto
         uses: actions/download-artifact@v3
         with:
           name: miartefacto
+
       - name: Usarlo
         run: cat output.txt
