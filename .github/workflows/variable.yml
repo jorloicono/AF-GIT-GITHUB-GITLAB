@@ -14,16 +14,13 @@ jobs:
     steps:
       - name: Check out el código
         uses: actions/checkout@v3
-
-      - name: Usar variable de entorno
-        run: echo "La variable de entorno es: $MY_ENV_VAR"
-
+        
       - name: Crear un archivo de texto
         run: echo "Este es un archivo generado" > output.txt
 
       - name: Guardar output
         id: save_output
-        run: echo "::set-output name=output_file::$(cat output.txt)"
+        run: echo "output_file=$(cat output.txt)" >> $GITHUB_ENV  # Guardar en el entorno
 
   deploy:
     runs-on: ubuntu-latest
@@ -33,4 +30,6 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Leer el output del job anterior
-        run: echo "El archivo generado en el job anterior es: ${{ needs.build.outputs.output_file }}"
+        run: echo "El archivo generado en el job anterior es: ${{ env.output_file }}"
+
+    
