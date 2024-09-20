@@ -16,7 +16,7 @@ jobs:
       - name: Descargar artefacto
         uses: actions/download-artifact@v4
         with:
-          name: miartefacto
+          name: miartefacto.zip
 
       - name: Usarlo
         run: cat output.txt
