@@ -1,0 +1,26 @@
+name: Subir artefacto
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Crear archivo
+        run: echo "Archivo" > output.txt
+
+      - name: Subir artefacto
+        uses: actions/upload-artifact@v4
+        with:
+          name: miartefacto
+          path: output.txt
+          
+      - name: Descarga artefacto
+        uses: actions/download-artifact@v3
+        with:
+          name: miartefacto
+      - name: Usarlo
+        run: cat output.txt
