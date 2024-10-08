@@ -6,7 +6,6 @@
 - Gestión de un repositorio
 - GUI’s
 - Github
-- Gitlab
 
 ## Ramas
 
