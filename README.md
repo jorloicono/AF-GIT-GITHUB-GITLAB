@@ -2,7 +2,7 @@
 
 ## Introducción
 
-- Control de versiones 
+- Control de versiones!!
 - Gestión de un repositorio
 - GUI’s
 - Github
