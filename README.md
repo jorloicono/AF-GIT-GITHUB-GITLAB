@@ -1,6 +1,8 @@
 # AF-GIT-GITHUB
 ## Introducción
 
+Cambios lab 10
+
 - Control de versiones 
 - Gestión de un repositorio
 - GUI’s
