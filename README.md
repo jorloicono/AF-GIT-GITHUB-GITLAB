@@ -1,5 +1,4 @@
 # AF-GIT-GITHUB
-Hola mundo!
 ## Introducción
 
 - Control de versiones 
