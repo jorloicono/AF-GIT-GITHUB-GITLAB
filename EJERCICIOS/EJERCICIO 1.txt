@@ -1,4 +1,6 @@
 Pasos a seguir:
+0. Hacer unnnnnnnnnnnnnnnnnnnnnnnnnnnnn.......................... .. . . . .. . . .. . 
+... . . . .. . ... . .. . .. . 
 1. Crea una carpeta en un nuevo directorio en la linea de comandos.
 - ¿Que pasa si ahora haces git status?
 2. Inicializa el repo
