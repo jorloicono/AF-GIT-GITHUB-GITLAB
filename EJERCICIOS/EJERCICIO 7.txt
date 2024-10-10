@@ -1,11 +1,6 @@
-Crear una nueva rama de funcionalidad utilizando Git Flow en un proyecto existente. 
-Agregar un archivo con un mensaje de bienvenida en la nueva rama. 
-Luego, fusionar la rama de funcionalidad con la rama de desarrollo utilizando 
-la estrategia de fusión de Git Flow. Por último, eliminar la rama de funcionalidad. 
-Se espera que el estudiante utilice los comandos y herramientas de Git Flow para 
-completar el ejercicio y que documente adecuadamente el proceso de implementación.
-Todo utilizando Sourcetree
+Crear un hook pre-commit que valide el mensaje de commit para asegurarse de que siga el formato correcto.
 
-
-
-
+Requisitos del Mensaje de Commit:
+Debe comenzar con una letra mayúscula.
+Debe tener al menos 10 caracteres.
+Debe terminar con un punto.
