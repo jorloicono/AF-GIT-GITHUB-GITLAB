@@ -1,8 +1,8 @@
 1. Crea dos archivos y haz un commit para cada uno de ellos
 2. Crea una segunda rama 
-3. Crea otro archivo 
-4. Muevete a la segunda rama
-5. Modifica los dos primeros y realiza un commit para cada acción
+3. Crea otro archivo en esa rama y haz commit
+4. Muevete a la primera rama
+5. Modifica los dos primeros archivos y realiza un commit 
 6. Mira los logs de ambas ramas.
 - ¿Que ves?
 7. Haz un merge
