@@ -26,3 +26,5 @@ jobs:
         uses: actions/checkout@v3
       - name: Leer el output del job anterior
         run: echo "El archivo generado en el job anterior es:$output_file"
+      - name: Print nombre
+        run: echo "Mi nombre es ${{ vars.NOMBRE }}"
