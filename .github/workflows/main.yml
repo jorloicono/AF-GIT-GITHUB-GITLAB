@@ -1,0 +1,10 @@
+name: Primer flujo
+on: workflow_dispatch
+jobs: 
+  primer-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Saludar
+        run: echo "Hola"
+      - name: Despedirse
+        run: echo "Adios"
