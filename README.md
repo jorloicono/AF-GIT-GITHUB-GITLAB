@@ -13,7 +13,7 @@
 - Resolviendo Problemas
 - Tipos de Ramas
 
-## Colaboración en Github
+## Colaboración en Github 
 
 - Ramas remotas
 - Publicando (Push)
