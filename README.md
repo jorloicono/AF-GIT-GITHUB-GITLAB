@@ -4,7 +4,7 @@
 - Control de versiones 
 - Gestión de un repositorio
 - GUI’s
-- Github
+- Github 
 
 ## Ramas
 
