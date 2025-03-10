@@ -19,6 +19,8 @@
 - Publicando (Push)
 - Tags
 - Pull Request
+> [!NOTE]
+> donde estamos ahora
 
 ## Reorganización
 
