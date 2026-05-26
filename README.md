@@ -52,4 +52,4 @@
 - Workflow. Partes y sintaxis
 - Configuración y ejecución de un workflow
 - Construir la imagen con Docker
-- Secretos
+- Secretos.
