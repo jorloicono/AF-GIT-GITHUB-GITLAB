@@ -1,0 +1,23 @@
+1. Crea el directorio
+2. Inicializa el respositorio
+3. Crea 2 archivos
+4. Comprueba el estado del repositorio
+- ¿Que ves?
+5. Añade los archivos al repositorio y colococalos en la zona de preparación
+6. Realiza el commit
+7. Crea un repositorio en GitHub
+8. Mira los repositorios remotos que tienes
+-¿Que ves?
+9. Añade un repositorio remoto
+10. Sincroniza el repositorio local con el repositorio remoto
+11. Ves a Github
+- ¿Ves los cambios?
+12. Añade modificaciones y un nuevo commit
+13. Sincroniza el repositorio local con el repositorio remoto
+14. Añade una rama a partir de la rama master llamada desarrollo
+15. Cambiate a la rama "desarrollo"
+git checkout desarrollo
+16. Añade un archivo en la rama desarrollo, añade contenido y haz el commit
+17. Mira el historial de commits
+18. Sincroniza el repositorio local con el repositorio remoto con git push -u origin desarrollo
+- ¿Que cambios ves en GitHub?
