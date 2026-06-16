@@ -13,3 +13,4 @@ Pasos a seguir:
 7. Renombrear una rama con el comando git branch -m [nombre_actual] [nombre_nuevo]. Llamar a experimento pruebas2.
 
 NO BORRES ESTO, LO UTILIZARAS EN EL EJERCICIO 3
+pull request local

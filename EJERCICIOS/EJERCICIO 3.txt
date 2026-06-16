@@ -17,3 +17,5 @@
 11. Corrige el error manualmente con un editor como vim
 12. Ejecuta git add archivo1.txt y haz commit
 - ¿Te deja ahora hacer el merge?
+
+solicitar pull request
